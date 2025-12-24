@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WELCOME MY PAGE</title>
+    </head>
+    <body>
+        <h1 id="text">WELCOME TO PORTAL</h1>
+        <button onclick="change()">CHANGE TEXT</button>
+        <button onclick="changeColor()">CHANGE COLOR</button>
+        <h1>Student list</h1>
+        <ul id="studentlist"></ul>
+        <script>
+            function change(){
+                document.getElementById("text").innerHTML="WELCOME NAVARASAM";
+            }
+        
+              function changeColor()
+              {
+                document.getElementById("text").style.color="blue";
+              } 
+              let students=["ranji","rithi","saji","suji"];
+              let list=document.getElementById("studentlist");
+              students.forEach(function(name)
+              {
+                let li=document.createElement("li");
+                li.innerText=name;
+               list.appendChild(li);});
+              </script>    
+                                                                                          
+    </body>
+</html>
